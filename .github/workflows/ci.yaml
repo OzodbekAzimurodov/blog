@@ -44,3 +44,13 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/blog:latest
+
+      - name: Deploy to the server              # <- the pasted part starts here
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: 5.133.141.122
+          port: 2256
+          username: student
+          password: 1223334444
+          script: |
+            bash ~/mamur/deploy.sh ${{ secrets.DOCKERHUB_USERNAME }}   # <- anna = the student's folder  
