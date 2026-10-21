@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0f1c1e;
+    --bg: #1363ef;
     --text: #e6f0f0;
     --muted: #9fc1c1;
     --card: #162a2d;
@@ -85,4 +85,9 @@ article p { margin: 0 0 1rem; }
 .topper {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.telegram-link {
+  color: var(--accent);
+  text-decoration: none;
 }
