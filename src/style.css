@@ -80,3 +80,9 @@ article p { margin: 0 0 1rem; }
   overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;
 }
 [hidden] { display: none !important; }
+
+
+.topper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
